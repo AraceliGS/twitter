@@ -31,7 +31,17 @@ window.addEventListener('load', function() {
     } else {
       tweetBtn.disabled = true;
       countDinamic.textContent = MAXCHARACTERS;
-      console.log('la cadena esta vacia');
+    }
+
+    var text = event.target.value.split('');
+    var acum = 0;
+    for (var i = 0; i < text.length; i++) {
+      if (text[i] === '\n') {
+        acum++;
+      }
+      if (acum) {
+        event.target.rows = acum + 2;
+      }
     }
   });
   tweetBtn.addEventListener('click', function(event) {
