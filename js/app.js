@@ -31,7 +31,6 @@ window.addEventListener('load', function() {
     } else {
       tweetBtn.disabled = true;
       countDinamic.textContent = MAXCHARACTERS;
-      console.log('la cadena esta vacia');
     }
   });
   tweetBtn.addEventListener('click', function(event) {
