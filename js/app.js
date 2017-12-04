@@ -10,12 +10,15 @@ window.addEventListener('load', function() {
     // Creando nodos donde se mostrará lo escrito en el textarea
     var div = document.createElement('div');
     var tweet = document.createElement('span');
-    var tweetText =document.createTextNode(tweetArea.value);
+    var tweetText = document.createTextNode(tweetArea.value);
     // Anexando nodos
     tweet.appendChild(tweetText);
     div.appendChild(tweet);
     div.classList.add('nuevo-mensaje');
     div.classList.add('tweet');
-    messages.insertBefore(div, messages.firstElementChild); // si hay algun nodo elemento en el div con el atributo id messages entonces este nuevo nodo se insertará antes que él. De lo contrario, será el primer elemento.
+    messages.insertBefore(div, messages.firstElementChild); // si hay algún nodo elemento en el div con el atributo id messages entonces este nuevo nodo se insertará antes que él. De lo contrario, será el primer elemento.
+
+    // Esto me sirve para borrar el contenido qu quede en mi textarea después de escribir y enviar mi tweet
+    tweetArea.value = '';
   });
 });
