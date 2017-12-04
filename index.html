@@ -6,6 +6,32 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <script type="text/javascript" src="app.js"></script>
+    <header>
+      <nav>
+        <h1>Twitter</h1>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="clearfix">
+        <div class="info">
+          <div class="info-text">
+            <h3 class="info-title">Reto de Código</h3>
+          </div>
+          <p>Hola,<br>soy front-end developer jr.</p>
+          <div class="info-code">Código</div>
+        </div>
+        <form>
+          <textarea id="tweet-area" placeholder="¿Qué está pasando?" autofocus></textarea>
+          <div class="footer-form clearfix">
+            <input id='tweet-btn' class='tweet-btn' type="submit" value="tweet">
+            <span id="count" class="count">140</span>
+          </div>
+        </form>
+      </section>
+      <section>
+        <div id="messages"></div>
+      </section>
+    </main>
+    <script type='text/javascript' src="js/app.js"></script>
   </body>
 </html>

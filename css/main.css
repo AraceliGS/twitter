@@ -1,1 +1,32 @@
+/* Colores a usar:
+   Color de background: 13BEEC;
+   Color de título y otros elementos: #FFF;
+   Azul oscuro: #1F618D
+   Plomizo claro: #EFEFEF
+*/
+
 /* Estilos generales */
+
+/* Seteo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Elemento body */
+  body {
+    background-image: url(../assets/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* El valor cover de esta propiedad permite reajustar la iamgen al tamaño del contenedor */
+    background-attachment: fixed;
+    font-family: monospace;
+    width: 100%;
+  }
+  /* Tweet */
+
+  .nuevo-mensaje {
+      background-color: #FFF;
+      border-radius: 5px;
+      margin: 1.5% auto;
+      padding: 1%;
+  }
