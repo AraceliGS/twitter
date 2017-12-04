@@ -19,9 +19,127 @@
     background-repeat: no-repeat;
     background-size: cover; /* El valor cover de esta propiedad permite reajustar la iamgen al tamaño del contenedor */
     background-attachment: fixed;
-    font-family: monospace;
+    font-family: Courier;
     width: 100%;
+    overflow: hidden;
   }
+
+  /* Header */
+
+  header {
+      background-color: #13BEEC; 
+      box-shadow: 0px 4px 4px #567e8f;
+      color: #FFF;
+      font-size: 25px;
+      height: 60px;
+      text-align: center;
+      padding-top: 12px;
+  }
+
+  /* Main */
+
+  .container {
+      margin: 0 auto;
+      padding: 20px 0 50px;
+      max-width: 1024px;
+      width: 100%;
+  }
+
+  /* Sections */
+
+  section {
+      margin: 50px 0;
+  }
+
+  /* calc() permite calcular el ancho de un elemento div */
+  .info, form {
+      background-color: #FFF;
+      border-radius: 4px;
+      float: left;
+      width: calc(50% - 10px);
+  }
+
+  /* Info user */
+
+  .info {
+      margin-right: 20px;
+  }
+
+  .info-text {
+      line-height: 1.5;
+      padding: 25px 20px 10px;
+  }
+
+  .info-title {
+      margin-bottom: 10px;
+  }
+
+  .info p {
+    padding-left: 5%;
+    line-height: 1.5;
+    margin-bottom: 5%;
+  }
+
+  .info-code {
+      border-top: 1px solid #EFEFEF;
+      color: #1F618D;
+      font-weight: 900;
+      padding: 20px 20px 25px;
+      text-transform: uppercase;
+  }
+
+  /* Form */
+
+  form {
+      padding: 25px 15px;
+  }
+
+  textarea {
+      border-top: none;
+      border-right: none;
+      border-bottom: 2px solid #336699;
+      border-left: none;
+      font-size: 16px;
+      min-height: 80px;
+      outline: none;
+      resize: none;
+      width: 100%;
+      overflow: hidden;
+  }
+
+  /* Prefijos para qeu se vea en algunos otros navegadores */
+  ::-webkit-input-placeholder,
+  ::-moz-placeholder,
+  :-ms-input-placeholder,
+  :-moz-placeholder {
+      color: #fafafa;
+  }
+
+  .footer-form  {
+      padding-top: 25px;
+  }
+
+  .tweet-btn, .count {
+      font-weight: 700;
+  }
+
+  .tweet-btn {
+	background-color: #1DA1F2;
+	border: 1px solid #0B7BC1;
+	border-radius: 4px;
+	color: #FFF;
+	font-family: Courier;
+	font-size: 16px;
+	text-transform: uppercase;
+    padding: 10px 25px;
+}
+
+.count {
+	float: right;
+	font-size: 18px;
+	line-height: 40px;
+}
+
   /* Tweet */
 
   .nuevo-mensaje {
@@ -30,3 +148,15 @@
       margin: 1.5% auto;
       padding: 1%;
   }
+
+  .tweet {
+	overflow-wrap: break-word;
+}
+
+/* Helpers*/
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}

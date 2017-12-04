@@ -15,6 +15,7 @@ window.addEventListener('load', function() {
     tweet.appendChild(tweetText);
     div.appendChild(tweet);
     div.classList.add('nuevo-mensaje');
+    div.classList.add('tweet');
     messages.insertBefore(div, messages.firstElementChild); // si hay algun nodo elemento en el div con el atributo id messages entonces este nuevo nodo se insertará antes que él. De lo contrario, será el primer elemento.
   });
 });
