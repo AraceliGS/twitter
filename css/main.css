@@ -134,6 +134,12 @@
     padding: 10px 25px;
 }
 
+.tweet-btn:disabled {
+    border: 1px solid #999;
+    background-color: #CCC;
+    color: #666;
+}
+
 .count {
 	float: right;
 	font-size: 18px;
