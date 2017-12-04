@@ -7,11 +7,27 @@ window.addEventListener('load', function() {
   var MAXCHARACTERS = 140;
 
   tweetArea.addEventListener('keydown', function(event) {
-    debugger;
     if (event.target.value.trim().length) { // trim() muestra todos los caracteres escritos en el contenido del textarea, excepto espacio o si no se ha escrito nada
       var total = MAXCHARACTERS - event.target.value.trim().length;
       tweetBtn.disabled = false;
       countDinamic.textContent = MAXCHARACTERS - event.target.value.trim().length;
+      if (event.target.value.trim().length > MAXCHARACTERS) {
+        tweetBtn.disabled = true;
+        // Quise dar color a countDinamic cuando la cantidad que muestre sea negativa, ya que quise diferenciarlo del momento en que la cantidad está entre 10 y 0
+        countDinamic.classList.add('negative');
+        countDinamic.classList.remove('warning');
+        countDinamic.classList.remove('not-many');
+      }
+      if (10 <= total && total < 20) {
+        countDinamic.classList.add('not-many');
+        countDinamic.classList.remove('warning');
+        countDinamic.classList.remove('negative');
+      }
+      if (0 <= total && total < 10) {
+        countDinamic.classList.add('warning');
+        countDinamic.classList.remove('not-many');
+        countDinamic.classList.remove('negative');
+      }   
     } else {
       tweetBtn.disabled = true;
       countDinamic.textContent = MAXCHARACTERS;

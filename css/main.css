@@ -136,7 +136,7 @@
 
 .tweet-btn:disabled {
     border: 1px solid #999;
-    background-color: #CCC;
+    background-color: #EFEFEF;
     color: #666;
 }
 
@@ -158,6 +158,18 @@
   .tweet {
 	overflow-wrap: break-word;
 }
+
+  .negative {
+      color: #F00;
+  }
+
+  .warning {
+      color: #9A0318;
+  }
+
+  .not-many {
+      color: #FFD433;
+  }
 
 /* Helpers*/
 
