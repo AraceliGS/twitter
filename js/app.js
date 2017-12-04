@@ -7,7 +7,6 @@ window.addEventListener('load', function() {
   var MAXCHARACTERS = 140;
 
   tweetArea.addEventListener('keydown', function(event) {
-    debugger;
     if (event.target.value.trim().length) { // trim() muestra todos los caracteres escritos en el contenido del textarea, excepto espacio o si no se ha escrito nada
       var total = MAXCHARACTERS - event.target.value.trim().length;
       tweetBtn.disabled = false;
