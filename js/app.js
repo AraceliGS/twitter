@@ -13,21 +13,31 @@ window.addEventListener('load', function() {
       countDinamic.textContent = MAXCHARACTERS - event.target.value.trim().length;
       if (event.target.value.trim().length > MAXCHARACTERS) {
         tweetBtn.disabled = true;
-        // Quise dar color a countDinamic cuando la cantidad que muestre sea negativa, ya que quise diferenciarlo del momento en que la cantidad está entre 10 y 0
-        countDinamic.classList.add('negative');
-        countDinamic.classList.remove('warning');
+      } 
+      if (total <= 20 && total <= 140) {
+        countDinamic.classList.add('allowed');
         countDinamic.classList.remove('not-many');
+        countDinamic.classList.remove('warning');
+        countDinamic.classList.remove('negative');
       }
       if (10 <= total && total < 20) {
         countDinamic.classList.add('not-many');
+        countDinamic.classList.remove('allowed');
         countDinamic.classList.remove('warning');
         countDinamic.classList.remove('negative');
       }
       if (0 <= total && total < 10) {
         countDinamic.classList.add('warning');
+        countDinamic.classList.remove('allowed');
         countDinamic.classList.remove('not-many');
         countDinamic.classList.remove('negative');
-      }   
+      }    
+      if (total < 0) {
+        countDinamic.classList.add('negative');
+        countDinamic.classList.remove('allowed');
+        countDinamic.classList.remove('not-many');
+        countDinamic.classList.remove('warning');
+      }
     } else {
       tweetBtn.disabled = true;
       countDinamic.textContent = MAXCHARACTERS;
