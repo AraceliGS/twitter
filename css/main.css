@@ -175,6 +175,10 @@
     color: #1F618D;
   }
   
+  .p-margin {
+    margin-top: 5px;
+  }
+  
 /* Helpers*/
 
 .clearfix::after {

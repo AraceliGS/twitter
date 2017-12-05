@@ -65,8 +65,15 @@ window.addEventListener('load', function() {
     var div = document.createElement('div');
     var tweet = document.createElement('span');
     var tweetText = document.createTextNode(tweetArea.value);
+    // Obteniendo la hora actual
+    var hours = moment().format('LT'); 
+    var fechaCompleta = document.createTextNode(hours);
+    var espacio = document.createElement('p');
     // Anexando nodos
     tweet.appendChild(tweetText);
+    tweet.appendChild(espacio);
+    espacio.classList.add('p-margin');
+    tweet.appendChild(fechaCompleta);
     div.appendChild(tweet);
     div.classList.add('nuevo-mensaje');
     div.classList.add('tweet');
