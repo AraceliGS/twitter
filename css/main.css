@@ -171,6 +171,10 @@
       color: #FFD433;
   }
 
+  .allowed {
+    color: #1F618D;
+  }
+  
 /* Helpers*/
 
 .clearfix::after {
