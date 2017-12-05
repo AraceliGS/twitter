@@ -42,7 +42,7 @@ window.addEventListener('load', function() {
       tweetBtn.disabled = true;
       countDinamic.textContent = MAXCHARACTERS;
     }
-
+    // El textarea debe crecer de acuerdo al tamaño del texto al presionar enter(/n) 
     var text = event.target.value.split('');
     var acum = 0;
     for (var i = 0; i < text.length; i++) {
@@ -53,9 +53,13 @@ window.addEventListener('load', function() {
         event.target.rows = acum + 2;
       }
     }
+    // Si la cantidad de caracteres ingresados (sin dar un enter), supera al tamaño del textarea por defecto, debe de agregarse una línea más para que no aparezca el scroll
+    if ((event.target.value.trim().length / event.target.cols) < event.target.rows) {
+      event.target.rows = (event.target.value.trim().length / event.target.cols) + 2;
+    }
   });
   tweetBtn.addEventListener('click', function(event) {
-    event.preventDefault(); // Esto em permite visualizar el valor del textarea en la consola haciendo que no desaparezca 
+    event.preventDefault(); // Esto me permite visualizar el valor del textarea en la consola haciendo que no desaparezca 
     // console.log(tweetArea.value); ---> Lo utilice para comprobar si con esto puedo obtener lo escrito en el textarea al hacer click        
     // Creando nodos donde se mostrará lo escrito en el textarea
     var div = document.createElement('div');
