@@ -5,7 +5,7 @@ window.addEventListener('load', function() {
   var messages = document.getElementById('messages'); // Variable que encierra al elemento div que se encuentra en section
 
   tweetBtn.addEventListener('click', function(event) {
-    event.preventDefault(); // Esto em permite visualizar el valor del textarea en la consola haciendo que no desaparezca 
+    event.preventDefault(); // Esto me permite visualizar el valor del textarea en la consola haciendo que no desaparezca 
     // console.log(tweetArea.value); ---> Lo utilice para comprobar si con esto puedo obtener lo escrito en el textarea al hacer click        
     // Creando nodos donde se mostrará lo escrito en el textarea
     var div = document.createElement('div');
