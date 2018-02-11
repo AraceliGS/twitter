@@ -34,7 +34,6 @@ El objetivo de este trabajo es crear una aplicación diseñada solo para desktop
 
 ![Restricciones](assets/images/version2.JPG)
 
-
 ## **Versiones**
 
 He creado seis versiones de este newsfeed, cada una con las siguientes funcionalidades:
