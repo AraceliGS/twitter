@@ -156,7 +156,8 @@
   }
 
   .tweet {
-	overflow-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 1.1em;
 }
 
   .negative {
