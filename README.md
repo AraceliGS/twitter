@@ -1,42 +1,83 @@
 # **Twitter**
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## **Objetivo**
 
-El objetivo de este reto es replicar el newsfeed de Twitter, para ello se seguirá un flujo de versiones para enfocarse de una manera más eficiente.
+El objetivo de este trabajo es crear una aplicación diseñada solo para desktops que replique el newsfeed de Twitter, donde los usuarios puedan publicar sus 'tweets' siguiendo las mismas reglas de dicha red social.
 
 ![Twitter](assets/images/twitter.gif)
 
+## **Herramientas Tecnológicas Empleadas**
+
+* HTML5
+
+* CSS3
+
+* Javascript
+
+* Librería de Javascript Moment
+
+* Guía de Estilos
+
+## **Reglas del Newsfeed**
+
+* No se puede ingresar texto vacío.
+
+* Solo se pueden escribir mensajes que contengan máximo 140 caracteres, pasado dicho número el botón para publicar será deshabilitado.
+
+![Restricciones](assets/images/version2.JPG)
+
+
 ## **Versiones**
+
+He creado seis versiones de este newsfeed, cada una con las siguientes funcionalidades:
 
 ### **Versión 0.0.1**
 
-* Diseñar un formulario que permita ingresar un texto y un botón para "twittear".
-* Agregar un evento de click al botón o de submit al formulario.
-* En el evento, obtener el texto.
-* Agregar el texto al HTML.
+* En esta versión el usuario podrá publicar sus mensajes sin ninguna de las restricciones anteriormente mencionadas.
 
--Enlace: [Twitter Versión 0.0.1](https://github.com/AraceliGS/twitter-version-1)
+![Versión 1](assets/images/version1.JPG)
 
 ### **Versión 0.0.2**
 
-* No ingresar texto vacío (deshabilitar el botón de "twittear").
-* Contar la cantidad de caracteres de forma regresiva.
+* No se puede ingresar texto vacío(se deshabilitará el botón para publicar).
+* Está disponible un contador de caracteres regresivo.
 
--Enlace: [Twitter Versión 0.0.2](https://github.com/AraceliGS/twitter-version-2)
+![Versión 2](assets/images/version2.1.JPG)
 
 ### **Versión 0.0.3**
 
-* No ingresar texto vacío (deshabilitar el botón de "twittear").
-* Si pasa los 120 caracteres, mostrar el contador con OTRO color.
-* Si pasa los 130 caracteres, mostrar el contador con OTRO color.
-* Si pasa los 140 caracteres, mostrar el contador en negativo.
+* Si la cantidad de caracteres restantes pasa de los 140 se deshabilitará el botón para publicar.
+* El contador cambiará de color, indicandole el número de caracteres restantes:
+  * Si pasa los 120 caracteres, mostrar el contador de color amarillo.
+  * Si pasa los 130 caracteres, mostrar el contador de color carmesí.
+  * Si pasa los 140 caracteres, mostrar el contador de color rojo.
 
--Enlace: [Twitter Versión 0.0.3](https://github.com/AraceliGS/twitter-version-3)
+![Versión 3](assets/images/version3.JPG)
 
 ### **Versión 0.0.4**
 
-* Al presionar enter(/n) que crezca el textarea de acuerdo al tamaño del texto.
+* Al presionar enter, el textarea crecerá de acuerdo al tamaño del texto.
 
--Enlace: [Twitter Versión 0.0.4](https://github.com/AraceliGS/twitter-version-4)
+![Versión 4](assets/images/version4.JPG)
+
+### **Versión 0.0.5**
+
+* Si la cantidad de caracteres ingresados (sin dar un enter), supera al tamaño del textarea por defecto, se agregará una línea.
+
+![Versión 5](assets/images/version5.JPG)
+
+### **Versión 0.0.6**
+
+* El tweet mostrará la hora de su publicación en el formato de 24 horas: ```hh:mm```.
+
+![Versión 6](assets/images/version6.JPG)
+
+## **Flujo de la Aplicación**
+
+* El usuario escribe cualquier mensaje que quiera publicar en el área de texto.
+
+* Hace click al botón Tweet si este está disponible(ver Reglas del Newsfeed).
+
+* Su tweet aparecerá en el newsfeed.on-4)
