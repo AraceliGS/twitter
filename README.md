@@ -24,13 +24,13 @@ He creado seis versiones de este newsfeed, cada una con las siguientes funcional
 
 ### **Versión 0.0.2**
 
-* No se puede ingresar texto vacío(no obstante, no se deshabilitará el botón para publicar).
+* No se puede ingresar texto vacío(se deshabilitará el botón para publicar).
 * Está disponible un contador de caracteres regresivo.
 
 ### **Versión 0.0.3**
 
-* No se puede ingresar texto vacío(se deshabilitará el botón para publicar).
-* El contador cambiará de color, indicandóle el némero de caracteres restantes:
+* Si la cantidad de caracteres restantes pasa de los 140 se deshabilitará el botón para publicar.
+* El contador cambiará de color, indicandole el némero de caracteres restantes:
   * Si pasa los 120 caracteres, mostrar el contador de color amarillo.
   * Si pasa los 130 caracteres, mostrar el contador de color carmesí.
   * Si pasa los 140 caracteres, mostrar el contador de color rojo.
