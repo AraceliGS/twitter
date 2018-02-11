@@ -61,5 +61,6 @@ window.addEventListener('load', function() {
     tweetArea.focus(); 
     tweetBtn.disabled = true;
     countDinamic.textContent = MAXCHARACTERS;
+    countDinamic.classList.add('allowed');
   });
 });
