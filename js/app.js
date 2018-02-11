@@ -5,7 +5,7 @@ window.addEventListener('load', function() {
   var messages = document.getElementById('messages'); // Variable que encierra al elemento div que se encuentra en section
   var countDinamic = document.getElementById('count');
   var MAXCHARACTERS = 140;
-
+  countDinamic.classList.add('allowed');
   tweetArea.addEventListener('keydown', function(event) {
     if (event.target.value.trim().length) { // trim() muestra todos los caracteres escritos en el contenido del textarea, excepto espacio o si no se ha escrito nada
       var total = MAXCHARACTERS - event.target.value.trim().length;
