@@ -2,6 +2,12 @@
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+[![forthebadge](http://forthebadge.com/images/badges/uses-css.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/uses-html.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/built-by-developers.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/for-you.svg)](http://forthebadge.com)
+
 ## **Objetivo**
 
 El objetivo de este trabajo es crear una aplicación diseñada solo para desktops que replique el newsfeed de Twitter, donde los usuarios puedan publicar sus 'tweets' siguiendo las mismas reglas de dicha red social.
@@ -27,7 +33,6 @@ El objetivo de este trabajo es crear una aplicación diseñada solo para desktop
 * Solo se pueden escribir mensajes que contengan máximo 140 caracteres, pasado dicho número el botón para publicar será deshabilitado.
 
 ![Restricciones](assets/images/version2.JPG)
-
 
 ## **Versiones**
 
