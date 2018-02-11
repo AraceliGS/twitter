@@ -140,6 +140,10 @@
 	line-height: 40px;
 }
 
+.allowed {
+    color: #1F618D;
+}
+
   /* Tweet */
 
   .nuevo-mensaje {
