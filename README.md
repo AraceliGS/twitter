@@ -8,11 +8,13 @@
 [![forthebadge](http://forthebadge.com/images/badges/built-by-developers.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/for-you.svg)](http://forthebadge.com)
 
-## **Objetivo**
+Esta aplicación web es diseñada solo para desktops y replica el newsfeed de Twitter, donde los usuarios puedan publicar sus 'tweets' siguiendo las mismas reglas de dicha red social.
 
-El objetivo de este trabajo es crear una aplicación diseñada solo para desktops que replique el newsfeed de Twitter, donde los usuarios puedan publicar sus 'tweets' siguiendo las mismas reglas de dicha red social.
+![twitter-preview](https://user-images.githubusercontent.com/32301650/36358270-d0cc058a-14d9-11e8-94f3-4d982bad29bc.png)
 
-![Twitter](assets/images/twitter.gif)
+## **Desarrollado para**
+
+[Laboratoria](http://laboratoria.la)
 
 ## **Herramientas Tecnológicas Empleadas**
 
